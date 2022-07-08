@@ -1,0 +1,40 @@
+.recent-orders-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recent-orders-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    min-width: 60vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.2em;
+    margin: 0.2em;
+    width: 30%;
+}
+
+.order-status {
+    background-color: rgb(194, 252, 252);
+    line-height: 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    color: rgb(33, 33, 33);
+    width: 80%;
+}
+
+.order-status.in-progress {
+    background-color: rgb(252, 211, 134);
+}
+
+.order-status.shipped {
+    background-color: rgb(158, 254, 158);
+}
+
+.order-status.cancelled {
+    background-color: rgb(253, 145, 145);
+}
